@@ -19,7 +19,7 @@ export class Slack extends IncomingWebhook {
     icon_emoji: string = 'github',
     channel: string = '#general'
   ) {
-    super(url, {username, icon_emoji, channel});
+    super(url, { username, icon_emoji, channel });
   }
 
   /**
