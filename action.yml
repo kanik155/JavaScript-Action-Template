@@ -1,4 +1,4 @@
-name: 'Slatify'
+name: 'Slack Notification'
 description: 'Slack Notification for Github Actions'
 author: 'kanik155'
 inputs:
