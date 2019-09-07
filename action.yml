@@ -1,10 +1,28 @@
-name: 'Hello'
-description: 'Outputs Hello to a named input'
+name: 'Slatify'
+description: 'Slack Notification for Github Actions'
 author: 'kanik155'
 inputs:
-  name:
-    description: 'the name to say hello to'
-    default: 'World'
+  type:
+    description: 'job status (success or failure)'
+    required: true
+  job_name:
+    description: 'job name of workflow (format: markdown)'
+    required: true
+  username:
+    description: 'slack username'
+    required: false
+    default: 'Github Actions'
+  icon_emoji:
+    description: 'slack icon emoji'
+    required: false
+    default: 'github'
+  channel:
+    description: 'slack channel'
+    required: false
+    default: '#general'
 runs:
   using: 'node12'
   main: 'lib/main.js'
+branding:
+  icon: 'bell'
+  color: 'white'
