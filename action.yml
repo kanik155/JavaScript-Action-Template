@@ -1,10 +1,10 @@
-name: 'Node 12 Template Action'
-description: 'Get started with Node actions'
-author: 'GitHub'
+name: 'Hello'
+description: 'Outputs Hello to a named input'
+author: 'kanik155'
 inputs:
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  name:
+    description: 'the name to say hello to'
+    default: 'World'
 runs:
   using: 'node12'
   main: 'lib/main.js'
