@@ -1,7 +1,7 @@
 /**
  * Convert status string to number
- * Return 0 (Status.Success) if argument word contains "success"
- * Return 1 (Status.Failure) if argument word contains "failure" or "cancelled"
+ * Return 1 (Status.Success) if argument word contains "success"
+ * Return 0 (Status.Failure) if argument word contains "failure" or "cancelled"
  * @param status {string}
  */
 export function getStatus(status: string): Status {
@@ -19,6 +19,6 @@ export function getStatus(status: string): Status {
 }
 
 export enum Status {
-  Success = 0,
-  Failure = 1,
+  Failure = 0,
+  Success = 1,
 }
